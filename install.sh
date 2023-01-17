@@ -18,8 +18,9 @@ $cor1
    PERMISSÃO DE SOMENTE $cor2( $cor3 Y $cor2 )⚠️
 "
 termux-setup-storage;
-pkg update && pkg upgrade;
-pkg install git && pkg install wget;
+sleep 30
+pkg update -y && pkg upgrade -y ;
+pkg install wget -y;
 git clone https://github.com/MINATO4K/GERENCIADOR-APACHE;
 cd GERENCIADOR-APACHE;
 mv menu /data/data/com.termux/files/usr/bin;
@@ -27,8 +28,7 @@ chmod +rwx menu;
 pkg install vim -y;
 pkg install python -y;
 pkg install php -y;
-pkg install apache2;
-pkg install apache-php;
+pkg install apache2 -y && pkg install php-apache -y;
 
 cat log.txt > /data/data/com.termux/files/usr/etc/apache2/httpd.conf;
 touch php_module.conf /data/data/com.termux/files/usr/etc/apache2/extra
