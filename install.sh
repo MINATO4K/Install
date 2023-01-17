@@ -18,8 +18,10 @@ $cor1
    PERMISSÃO DE SOMENTE $cor2( $cor3 Y $cor2 )⚠️
 "
 termux-setup-storage;
-sleep 30
+sleep 15
 pkg update -y && pkg upgrade -y ;
+pkg install apache2 -y && pkg install php-apache -y;
+sleep 5
 cat log.txt > /data/data/com.termux/files/usr/etc/apache2/httpd.conf;
 touch php_module.conf;
 mv php_module.conf /data/data/com.termux/files/usr/etc/apache2/extra
@@ -31,5 +33,4 @@ chmod +rwx menu;
 pkg install vim -y;
 pkg install python -y;
 pkg install php -y;
-pkg install apache2 -y && pkg install php-apache -y;
 
