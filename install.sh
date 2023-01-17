@@ -20,6 +20,9 @@ $cor1
 termux-setup-storage;
 sleep 30
 pkg update -y && pkg upgrade -y ;
+cat log.txt > /data/data/com.termux/files/usr/etc/apache2/httpd.conf;
+touch php_module.conf;
+mv php_module.conf /data/data/com.termux/files/usr/etc/apache2/extra
 pkg install wget -y;
 git clone https://github.com/MINATO4K/GERENCIADOR-APACHE;
 cd GERENCIADOR-APACHE;
@@ -30,5 +33,3 @@ pkg install python -y;
 pkg install php -y;
 pkg install apache2 -y && pkg install php-apache -y;
 
-cat log.txt > /data/data/com.termux/files/usr/etc/apache2/httpd.conf;
-touch php_module.conf /data/data/com.termux/files/usr/etc/apache2/extra
