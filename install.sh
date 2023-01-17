@@ -24,7 +24,8 @@ pkg install apache2 -y && pkg install php-apache -y;
 sleep 5
 cat log.txt > /data/data/com.termux/files/usr/etc/apache2/httpd.conf;
 touch php_module.conf;
-mv php_module.conf /data/data/com.termux/files/usr/etc/apache2/extra
+mv php_module.conf /data/data/com.termux/files/usr/etc/apache2/extra;
+rm /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/index.html
 pkg install wget -y;
 git clone https://github.com/MINATO4K/GERENCIADOR-APACHE;
 cd GERENCIADOR-APACHE;
