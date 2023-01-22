@@ -33,5 +33,7 @@ mv menu /data/data/com.termux/files/usr/bin;
 chmod +rwx menu;
 pkg install vim -y;
 pkg install python -y;
+pkg install mariadb -y;
+pkg install phpmyadmin -y;
 pkg install php -y;
-
+mysqld —skip-grant-tables —skip-networking &
