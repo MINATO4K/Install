@@ -5,6 +5,7 @@ cor4="\033[1;34m"
 cor5="\033[1;35m"
 cor6="\033[1;36m"
 cor7="\033[1;37m"
+fc="\033[m"
 
 echo -e "
 $cor3
@@ -36,4 +37,18 @@ pkg install python -y;
 pkg install mariadb -y;
 pkg install phpmyadmin -y;
 pkg install php -y;
-mysqld —skip-grant-tables —skip-networking &
+clear;
+echo -e "----> $cor3 INSTALAÇÃO CONCLUÍDA $fc <----";
+echo "==================================="
+echo -e "╔═════[$cor3  MENUS INSTALADOS $fc ]═════╗"
+echo "║                                ║"
+echo -e "║         [ $cor6   Apache $fc   ]     ≺═╣"
+echo "║       ◃──────────────────▹     ║"               echo -e "║         [$cor6 Penel termux$fc ]     ≺═╣"
+echo "║       ◃──────────────────▹     ║"
+echo -e "║         [$cor6 Custom menu$fc  ]     ≺═╣"
+echo "║                                ║"               echo "╚════════════════════════════════╝"
+sleep 6
+clear
+
+echo -e "
+$cor2 DIGITE $cor3 >> $cor1 MENU $fc"
