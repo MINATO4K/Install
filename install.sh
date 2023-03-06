@@ -43,10 +43,12 @@ echo "==================================="
 echo -e "╔═════[$cor3  MENUS INSTALADOS $fc ]═════╗"
 echo "║                                ║"
 echo -e "║         [ $cor6   Apache $fc   ]     ≺═╣"
-echo "║       ◃──────────────────▹     ║"               echo -e "║         [$cor6 Penel termux$fc ]     ≺═╣"
+echo "║       ◃──────────────────▹     ║"               
+echo -e "║         [$cor6 Penel termux$fc ]     ≺═╣"
 echo "║       ◃──────────────────▹     ║"
 echo -e "║         [$cor6 Custom menu$fc  ]     ≺═╣"
-echo "║                                ║"               echo "╚════════════════════════════════╝"
+echo "║                                ║"               
+echo "╚════════════════════════════════╝"
 sleep 6
 clear
 
